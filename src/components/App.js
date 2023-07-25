@@ -13,7 +13,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Dapp University
+            AAVE Connect
           </a>
         </nav>
         <div className="container-fluid mt-5">
@@ -27,18 +27,16 @@ class App extends Component {
                 >
                   <img src={logo} className="App-logo" alt="logo" />
                 </a>
-                <h1>Dapp University Starter Kit</h1>
-                <p>
-                  Edit <code>src/components/App.js</code> and save to reload.
-                </p>
-                <a
-                  className="App-link"
-                  href="http://www.dappuniversity.com/bootcamp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  LEARN BLOCKCHAIN <u><b>NOW! </b></u>
-                </a>
+                <div className="content mx-auto mt-5">
+                {/* Added Ethereum Balance heading */}
+                <h2>Ethereum Balance:</h2>
+                <p>10 eth</p>
+                {/* Added DAI Balance heading */}
+                <h2>DAI Balance:</h2>
+                <p>1000 DAI</p>
+                {/* Added Borrow DAI button */}
+                <button onClick={() => alert("Borrow DAI")}>Borrow DAI</button>
+              </div>
               </div>
             </main>
           </div>
